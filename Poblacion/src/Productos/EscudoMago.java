@@ -5,10 +5,27 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class EscudoMago implements Escudo{
+    Image imagen;
+    
+    public EscudoMago(){
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.Escudos/EscudoMago.jpg")).getImage();
+    }
+    @Override
+    public void draw(Graphics g){
+        g.drawImage(imagen, 0, 0, null);
+    }
+    public String descripcion(){
+        return "";
+    }
     
 }

@@ -5,10 +5,27 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class CuerpoHada implements Cuerpo{
+    Image imagen;
+    
+    public CuerpoHada(){
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.personajes/Hada.jpg")).getImage();
+    }
+    @Override
+    public void draw(Graphics g){
+        g.drawImage(imagen, 0, 0, null);
+    }
+    public String descripcion(){
+        return "";
+    }
     
 }

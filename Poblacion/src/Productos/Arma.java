@@ -5,10 +5,15 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+
 /**
  *
  * @author Estudiantes
  */
 public interface Arma {
+    public String descripcion();
+    public void draw(Graphics g); 
     
 }

@@ -5,10 +5,27 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class CuerpoHumano implements Cuerpo{
+    Image imagen;
+    
+    public CuerpoHumano(){
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.personajes/Humano.jpg")).getImage();
+    }
+    @Override
+    public void draw(Graphics g){
+        g.drawImage(imagen, 0, 0, null);
+    }
+    public String descripcion(){
+        return "";
+    }
     
 }

@@ -5,10 +5,27 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class ArmaMago implements Arma{
+    Image imagen;
+    
+    public ArmaMago(){
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.Armas/ArmaMago.jpg")).getImage();
+    }
+    @Override
+    public void draw(Graphics g){
+        g.drawImage(imagen, 0, 0, null);
+    }
+    public String descripcion(){
+        return "";
+    }
     
 }
