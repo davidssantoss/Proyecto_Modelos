@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package poblacion;
-
+import Vista.canvas;
 /**
  *
  * @author Estudiantes
@@ -15,7 +15,8 @@ public class Poblacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       
+       canvas pes = new canvas();
+       pes.setVisible(true);
     }
     
 }
