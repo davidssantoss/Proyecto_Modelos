@@ -19,16 +19,19 @@ public class MiCanvas extends Canvas {
     Graphics miG;
     Image imgBuffer;
     Personaje fabricapersonaje;
+    Elfo elfo;
+    Arma armas;
 
     public MiCanvas() {
-        fabricapersonaje = new Elfo();
-        fabricapersonaje.crearCuerpo();
+        armas = fabricapersonaje.crearArma();
+        armas = new ArmaElfo();
+        
     }
      
     public void paint(Graphics g){
         
         miG = imgBuffer.getGraphics();
-	//fabricapersonaje.draw(miG);
+	armas.draw(miG);
         
     }
 }
