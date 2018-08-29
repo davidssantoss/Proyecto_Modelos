@@ -5,27 +5,20 @@
  */
 package Productos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Estudiantes
  */
 public class CuerpoOgro implements Cuerpo{
-    Image imagen;
-    
-    public CuerpoOgro(){
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.personajes/Ogro.jpg")).getImage();
+    String descripcion;
+
+    public CuerpoOgro() {
+        this.descripcion = "Grande y muy fuerte, el más agresivo de todos, no teme exteriorizar toda su fuerza con quien se atreva a enfrentarse a él.";
     }
-    @Override
-    public void draw(Graphics g){
-        g.drawImage(imagen, 0, 0, null);
+
+    public String getDescripcion() {
+        return descripcion;
     }
-    public String descripcion(){
-        return "";
-    }
+
     
 }

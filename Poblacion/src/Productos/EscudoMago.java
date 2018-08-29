@@ -5,27 +5,19 @@
  */
 package Productos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Estudiantes
  */
 public class EscudoMago implements Escudo{
-    Image imagen;
-    
-    public EscudoMago(){
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Escudos/EscudoMago.jpg")).getImage();
-    }
-    @Override
-    public void draw(Graphics g){
-        g.drawImage(imagen, 0, 0, null);
-    }
-    public String descripcion(){
-        return "";
+     String descripcion;
+
+    public EscudoMago() {
+        this.descripcion = "El escudo más grande y pesado de todos, sin embargo, esto no le impide protegerse perfectamente.";
     }
     
+    public String getDescripcion() {
+        return descripcion;
+    }
+     
 }

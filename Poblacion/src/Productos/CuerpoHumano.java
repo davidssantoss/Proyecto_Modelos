@@ -5,27 +5,19 @@
  */
 package Productos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Estudiantes
  */
 public class CuerpoHumano implements Cuerpo{
-    Image imagen;
-    
-    public CuerpoHumano(){
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.personajes/Humano.jpg")).getImage();
+     String descripcion;
+
+    public CuerpoHumano() {
+        this.descripcion = "Guerrero humano, uno de los más fuertes del mundo. Fiero y dispuesto a dar su vida por los suyos.";
     }
-    @Override
-    public void draw(Graphics g){
-        g.drawImage(imagen, 0, 0, null);
+     
+     
+     public String getDescripcion() {
+        return descripcion;
     }
-    public String descripcion(){
-        return "";
-    }
-    
 }

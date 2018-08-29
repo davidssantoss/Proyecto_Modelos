@@ -5,27 +5,18 @@
  */
 package Productos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Estudiantes
  */
 public class EscudoHada implements Escudo{
-    Image imagen;
-    
-    public EscudoHada(){
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Escudos/EscudoHada.jpg")).getImage();
+     String descripcion;
+
+    public EscudoHada() {
+        this.descripcion = "No tiene escudo físico, se protege y a la vez puede proteger a otros con su campo de fuerza.";
     }
-    @Override
-    public void draw(Graphics g){
-        g.drawImage(imagen, 0, 0, null);
+      public String getDescripcion() {
+        return descripcion;
     }
-    public String descripcion(){
-        return "";
-    }
-    
+     
 }

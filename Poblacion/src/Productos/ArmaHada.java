@@ -5,27 +5,21 @@
  */
 package Productos;
 
-import java.awt.Graphics;
-import java.awt.Image;
-import javax.swing.ImageIcon;
-
 /**
  *
  * @author Estudiantes
  */
 public class ArmaHada implements Arma{
-    Image imagen;
-    
-    public ArmaHada(){
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaHada.jpg")).getImage();
+     String descripcion;
+
+    public ArmaHada() {
+        this.descripcion = "Varita, que al igual que ella, es muy tierna, pero tiene más poder de lo que parece.";
     }
-    @Override
-    public void draw(Graphics g){
-        g.drawImage(imagen, 0, 0, null);
+
+
+    public String getDescripcion() {
+        return descripcion;
     }
-    public String descripcion(){
-        return "";
-    }
-    
+     
+     
 }
