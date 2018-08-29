@@ -5,20 +5,32 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class CuerpoElfo implements Cuerpo{
-     String descripcion;
+    Image imagen;          
+    String descripcion;
 
     public CuerpoElfo() {
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.personajes/Elfo.jpg")).getImage();
         this.descripcion = "Ser espiritual valiente, inteligente y casi inmortal; y por todo esto es muy bueno en batalla.";
     }
 
 
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        g.drawImage(imagen, 0, 0, null);
     }
      
      

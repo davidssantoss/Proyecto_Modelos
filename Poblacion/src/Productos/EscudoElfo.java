@@ -5,19 +5,31 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class EscudoElfo implements Escudo{
-     String descripcion;
+    Image imagen;
+    String descripcion;
      
     public EscudoElfo() {
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.Escudos/EscudoElfo.jpg")).getImage();
         this.descripcion = "Escudo físico, construido por los mismos elfos y especiales para ellos, un escudo digno de ellos.";
     }
 
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        g.drawImage(imagen, 0, 0, null);
     }
      
     

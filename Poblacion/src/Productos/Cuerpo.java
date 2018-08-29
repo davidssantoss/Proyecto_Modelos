@@ -5,10 +5,13 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+
 /**
  *
  * @author Estudiantes
  */
 public interface Cuerpo {
+    public void draw(Graphics g); 
     
 }

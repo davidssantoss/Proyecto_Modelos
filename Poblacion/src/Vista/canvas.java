@@ -11,21 +11,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import Productos.ArmaElfo;
-import Productos.ArmaHada;
-import Productos.ArmaHumano;
-import Productos.ArmaOgro;
-import Productos.ArmaMago;
-import Productos.CuerpoElfo;
-import Productos.CuerpoHada;
-import Productos.CuerpoHumano;
-import Productos.CuerpoMago;
-import Productos.CuerpoOgro;
-import Productos.EscudoElfo;
-import Productos.EscudoHada;
-import Productos.EscudoHumano;
-import Productos.EscudoMago;
-import Productos.EscudoOgro;
+import Productos.*;
+
 import javax.swing.ImageIcon;
 
 public class canvas extends JFrame implements ActionListener {
@@ -90,7 +77,7 @@ public class canvas extends JFrame implements ActionListener {
          EscudoHada eshad=new EscudoHada();
          EscudoHumano eshum=new EscudoHumano();
          EscudoMago esmag=new EscudoMago();
-         EscudoOgro esog= new EscudoOgro   (); 
+         EscudoOgro esog= new EscudoOgro(); 
                  
                  
         // creamos los componentes
@@ -123,7 +110,7 @@ public class canvas extends JFrame implements ActionListener {
         
         
         // configuramos los componentes
-        deself.setText("Elfo "+"Cuerpo:"+elf.getDescripcion()+"Arma:"+arelf.getDescripcion()+"Escudo:"+eself.getDescripcion());    // colocamos un texto a la etiqueta
+        deself.setText("Elfo "+"Cuerpo:"+elf.getDescripcion()+" Arma:"+arelf.getDescripcion()+"<br> Escudo:"+eself.getDescripcion());    // colocamos un texto a la etiqueta
         deshuma.setText("Humano "+"Cuerpo:"+hum.getDescripcion()+"Arma:"+arhum.getDescripcion()+"Escudo:"+eshum.getDescripcion());
         desogro.setText("Ogro "+"Cuerpo:"+og.getDescripcion()+"Arma:"+arog.getDescripcion()+"Escudo:"+esog.getDescripcion());
         desmago.setText("Mago "+"Cuerpo:"+mag.getDescripcion()+"Arma:"+armag.getDescripcion()+"Escudo:"+esmag.getDescripcion());

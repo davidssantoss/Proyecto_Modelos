@@ -5,19 +5,31 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class EscudoHumano implements Escudo{
-     String descripcion;
+    Image imagen;    
+    String descripcion;
 
     public EscudoHumano() {
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.Escudos/EscudoHumano.jpg")).getImage();
         this.descripcion = "Escudo resistente y ligero, perfecto para una batalla cuerpo a cuerpo.";
     }
      
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        g.drawImage(imagen, 0, 0, null);
     }
      
 }

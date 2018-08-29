@@ -5,20 +5,32 @@
  */
 package Productos;
 
+import java.awt.Graphics;
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
 /**
  *
  * @author Estudiantes
  */
 public class ArmaMago implements Arma{
+    Image imagen;
      String descripcion;
 
     public ArmaMago() {
+        imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes.Armas/ArmaMago.jpg")).getImage();
         this.descripcion = "Báculo especial para el mago, que le ayuda a canalizar sus poderes y manejarlos en cualquier situación";
     }
 
 
     public String getDescripcion() {
         return descripcion;
+    }
+
+    @Override
+    public void draw(Graphics g) {
+        g.drawImage(imagen, 0, 0, null);
     }
      
      
