@@ -12,6 +12,7 @@ import java.awt.Graphics;
  * @author Estudiantes
  */
 public interface Escudo {
+    public String getDescripcion();
     public void draw(Graphics g); 
     
 }

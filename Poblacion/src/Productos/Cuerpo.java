@@ -12,6 +12,7 @@ import java.awt.Graphics;
  * @author Estudiantes
  */
 public interface Cuerpo {
+    public String getDescripcion();
     public void draw(Graphics g); 
     
 }

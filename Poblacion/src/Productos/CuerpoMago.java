@@ -24,6 +24,7 @@ public class CuerpoMago implements Cuerpo{
     }
 
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

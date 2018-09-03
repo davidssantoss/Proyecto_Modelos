@@ -24,6 +24,7 @@ public class ArmaOgro implements Arma{
     }
 
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

@@ -23,6 +23,7 @@ public class CuerpoOgro implements Cuerpo{
         this.descripcion = "Grande y muy fuerte, el más agresivo de todos, no teme exteriorizar toda su fuerza con quien se atreva a enfrentarse a él.";
     }
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

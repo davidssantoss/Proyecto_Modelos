@@ -24,6 +24,7 @@ public class ArmaHumano implements Arma{
     }
 
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

@@ -23,6 +23,7 @@ public class EscudoOgro implements Escudo{
         this.descripcion = "El más sencillo de todos, sin embargo, a el ogro no le hace falta, con su fuerza le basta.";
     }
     
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

@@ -23,6 +23,7 @@ public class EscudoMago implements Escudo{
         this.descripcion = "El escudo más grande y pesado de todos, sin embargo, esto no le impide protegerse perfectamente.";
     }
     
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

@@ -23,6 +23,7 @@ public class EscudoElfo implements Escudo{
         this.descripcion = "Escudo físico, construido por los mismos elfos y especiales para ellos, un escudo digno de ellos.";
     }
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

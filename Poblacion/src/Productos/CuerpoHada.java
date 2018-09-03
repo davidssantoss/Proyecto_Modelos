@@ -23,6 +23,7 @@ public class CuerpoHada implements Cuerpo{
         this.descripcion = "Ser de paz, vive en las más hermosas praderas en medio del bosque, pero si se siente amenazada, puede sacar su lado más oscuro y terrible.";
     }
      
+    @Override
      public String getDescripcion() {
         return descripcion;
     }

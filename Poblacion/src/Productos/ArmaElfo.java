@@ -27,6 +27,7 @@ public class ArmaElfo implements Arma{
     }
 
      
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

@@ -23,6 +23,7 @@ public class EscudoHumano implements Escudo{
         this.descripcion = "Escudo resistente y ligero, perfecto para una batalla cuerpo a cuerpo.";
     }
      
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

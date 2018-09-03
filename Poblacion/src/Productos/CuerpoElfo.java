@@ -24,6 +24,7 @@ public class CuerpoElfo implements Cuerpo{
     }
 
 
+    @Override
     public String getDescripcion() {
         return descripcion;
     }

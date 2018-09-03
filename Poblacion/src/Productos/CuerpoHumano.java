@@ -24,6 +24,7 @@ public class CuerpoHumano implements Cuerpo{
     }
      
      
+    @Override
      public String getDescripcion() {
         return descripcion;
     }
