@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package Vista;
+import Fabricas.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JButton;
@@ -61,23 +62,29 @@ public class canvas extends JFrame implements ActionListener {
     } 
     
      private void inicializarComponentes() {
-         ArmaElfo arelf = new ArmaElfo();
-         ArmaHada arhad = new ArmaHada();
-         ArmaHumano arhum = new ArmaHumano();
-         ArmaMago armag = new ArmaMago();
-         ArmaOgro arog = new ArmaOgro();
+         Personaje per;
          
-         CuerpoElfo elf = new  CuerpoElfo ();
-         CuerpoHada had = new CuerpoHada ();
-         CuerpoHumano hum = new CuerpoHumano ();
-         CuerpoOgro og = new CuerpoOgro();
-         CuerpoMago mag = new CuerpoMago  ();
+         Arma arma;
+         Cuerpo cuerpo;
+         Escudo escudo;
          
-         EscudoElfo eself=new EscudoElfo();
-         EscudoHada eshad=new EscudoHada();
-         EscudoHumano eshum=new EscudoHumano();
-         EscudoMago esmag=new EscudoMago();
-         EscudoOgro esog= new EscudoOgro(); 
+         ArmaElfo arelf ;
+         ArmaHada arhad ;
+         ArmaHumano arhum;
+         ArmaMago armag;
+         ArmaOgro arog;
+         
+         CuerpoElfo elf ;
+         CuerpoHada had ;
+         CuerpoHumano hum ;
+         CuerpoOgro og ;
+         CuerpoMago mag ;
+         
+         EscudoElfo eself;
+         EscudoHada eshad;
+         EscudoHumano eshum;
+         EscudoMago esmag;
+         EscudoOgro esog; 
                  
                  
         // creamos los componentes
@@ -109,19 +116,37 @@ public class canvas extends JFrame implements ActionListener {
         boton = new JButton();
         
         
+        /**per = new Elfo();
+        per = new Hada();
+        per = new Mago();
+        per = new Ogro();**/
+        per = new Humano();
+        
+        cuerpo = per.crearCuerpo();
+        arma = per.crearArma();
+        escudo = per.crearEscudo();
+        
+        
+        
+        
+        
+        
+        
+        
+        
         // configuramos los componentes
-        deself.setText("Elfo "+"Cuerpo:"+elf.getDescripcion()+" Arma:"+arelf.getDescripcion()+"<br> Escudo:"+eself.getDescripcion());    // colocamos un texto a la etiqueta
-        deshuma.setText("Humano "+"Cuerpo:"+hum.getDescripcion()+"Arma:"+arhum.getDescripcion()+"Escudo:"+eshum.getDescripcion());
-        desogro.setText("Ogro "+"Cuerpo:"+og.getDescripcion()+"Arma:"+arog.getDescripcion()+"Escudo:"+esog.getDescripcion());
-        desmago.setText("Mago "+"Cuerpo:"+mag.getDescripcion()+"Arma:"+armag.getDescripcion()+"Escudo:"+esmag.getDescripcion());
-        deshada.setText("Hada "+"Cuerpo:"+had.getDescripcion()+"Arma:"+arhad.getDescripcion());
+        deself.setText("Elfo "+"Cuerpo:"+cuerpo.getDescripcion()+" Arma:"+arma.getDescripcion()+"<br> Escudo:"+escudo.getDescripcion());    // colocamos un texto a la etiqueta
+        deshuma.setText("Humano "+"Cuerpo:"+cuerpo.getDescripcion()+"Arma:"+arma.getDescripcion()+"Escudo:"+escudo.getDescripcion());
+        desogro.setText("Ogro "+"Cuerpo:"+cuerpo.getDescripcion()+"Arma:"+arma.getDescripcion()+"Escudo:"+escudo.getDescripcion());
+        desmago.setText("Mago "+"Cuerpo:"+cuerpo.getDescripcion()+"Arma:"+arma.getDescripcion()+"Escudo:"+escudo.getDescripcion());
+        deshada.setText("Hada "+"Cuerpo:"+cuerpo.getDescripcion()+"Arma:"+arma.getDescripcion());
         
-        imgelf.setIcon(new ImageIcon("/Vista/Elfo.jpg"));
-        imghum.setIcon(new ImageIcon("Humano.jpg"));
-        imgog.setIcon(new ImageIcon("Ogro.jpg"));
-        imgmag.setIcon(new ImageIcon("Mago.jpg"));
-        imghad.setIcon(new ImageIcon("Hada.jpg"));
-        
+//        imgelf.setIcon(new ImageIcon("/Vista/Elfo.jpg"));
+//        imghum.setIcon(new ImageIcon("Humano.jpg"));
+//        imgog.setIcon(new ImageIcon("Ogro.jpg"));
+//        imgmag.setIcon(new ImageIcon("Mago.jpg"));
+//        imghad.setIcon(new ImageIcon("Hada.jpg"));
+//        
         
         
         
