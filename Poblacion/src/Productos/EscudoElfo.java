@@ -14,12 +14,12 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class EscudoElfo implements Escudo{
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/EscudoElfo.jpg")).getImage();
     String descripcion;
      
     public EscudoElfo() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Escudos/EscudoElfo.jpg")).getImage();
+        
         this.descripcion = "Escudo físico, construido por los mismos elfos y especiales para ellos, un escudo digno de ellos.";
     }
 

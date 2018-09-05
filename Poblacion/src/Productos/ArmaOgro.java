@@ -14,12 +14,10 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaOgro implements Arma{
-    Image imagen;
+    Image imagen  = new ImageIcon(getClass().getResource("/Imagenes/ArmOGRO.png")).getImage();
      String descripcion;
 
     public ArmaOgro() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaOgro.jpg")).getImage();
         this.descripcion = "Maso gigante, el arma perfecta para él, con el golpea cosas y las aplasta sin piedad.";
     }
 
@@ -31,8 +29,6 @@ public class ArmaOgro implements Arma{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 0, 0, null);
+        g.drawImage(imagen, 900, 100, null);
     }
-     
-    
 }

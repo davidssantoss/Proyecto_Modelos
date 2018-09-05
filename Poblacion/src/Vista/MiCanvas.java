@@ -10,7 +10,7 @@ import Fabricas.*;
 import Productos.*;
 import java.awt.Graphics;
 import java.awt.Image;
-import java.util.Iterator;
+import java.awt.image.BufferedImage;
 /**
  *
  * @author Estudiantes
@@ -18,20 +18,33 @@ import java.util.Iterator;
 public class MiCanvas extends Canvas {
     Graphics miG;
     Image imgBuffer;
-    Personaje fabricapersonaje;
-    Elfo elfo;
-    Arma armas;
-
+    Personaje personaje;
+    Arma arma;
+    Cuerpo cuerpo;
+    Escudo escudo; 
+    
+    
     public MiCanvas() {
-        armas = fabricapersonaje.crearArma();
-        armas = new ArmaElfo();
+        personaje = new Ogro();
+        cuerpo = personaje.crearCuerpo();
+        arma = personaje.crearArma();
+        escudo = personaje.crearEscudo();
+        setBounds(0, 0, 2000, 1000);
+        
+                
         
     }
      
+    @Override
     public void paint(Graphics g){
         
-        miG = imgBuffer.getGraphics();
-	armas.draw(miG);
+	cuerpo.draw(g);
+        arma.draw(g);
+        escudo.draw(g);
         
+    }
+    @Override
+    public void update(Graphics g){
+        paint(g);
     }
 }

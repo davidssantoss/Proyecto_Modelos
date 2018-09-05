@@ -14,12 +14,12 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class CuerpoElfo implements Cuerpo{
-    Image imagen;          
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/Elfo.jpg")).getImage();
     String descripcion;
 
     public CuerpoElfo() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.personajes/Elfo.jpg")).getImage();
+        
         this.descripcion = "Ser espiritual valiente, inteligente y casi inmortal; y por todo esto es muy bueno en batalla.";
     }
 

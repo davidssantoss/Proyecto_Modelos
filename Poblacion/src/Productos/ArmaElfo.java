@@ -17,12 +17,12 @@ import javax.swing.ImageIcon;
  */
 public class ArmaElfo implements Arma{
     String descripcion;
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/ArmaElfo.jpg")).getImage();
     
 
     public ArmaElfo() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaElfo.jpg")).getImage();
+        
         this.descripcion = "Escudo y flecha, de apariencia sencilla, pero muy letal en manos de un elfo, especialistas en la misma.\n";
     }
 

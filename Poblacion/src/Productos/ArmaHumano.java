@@ -14,12 +14,12 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaHumano implements Arma{
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/ArmaHumano.jpg")).getImage();
     String descripcion;
 
     public ArmaHumano() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaHumano.jpg")).getImage();
+        
         this.descripcion = "Espada forjara por los mejores herreros, pasada de generación en generación; casi indestructible";
     }
 

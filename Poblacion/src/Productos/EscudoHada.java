@@ -14,12 +14,12 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class EscudoHada implements Escudo{
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/EscudoHada.jpg")).getImage();
      String descripcion;
 
     public EscudoHada() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Escudos/EscudoHada.jpg")).getImage();
+        
         this.descripcion = "No tiene escudo físico, se protege y a la vez puede proteger a otros con su campo de fuerza.";
     }
     @Override

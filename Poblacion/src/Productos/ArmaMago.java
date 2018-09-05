@@ -14,12 +14,12 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaMago implements Arma{
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/ArmaMago.jpg")).getImage();
      String descripcion;
 
     public ArmaMago() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaMago.jpg")).getImage();
+        
         this.descripcion = "Báculo especial para el mago, que le ayuda a canalizar sus poderes y manejarlos en cualquier situación";
     }
 

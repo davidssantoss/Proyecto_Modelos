@@ -15,11 +15,11 @@ import javax.swing.ImageIcon;
  */
 public class ArmaHada implements Arma{
     String descripcion;
-    Image imagen;
+    Image imagen = new ImageIcon(getClass().getResource(
+                "/Imagenes/ArmaHada.jpg")).getImage();
 
     public ArmaHada() {
-        imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes.Armas/ArmaHada.jpg")).getImage();
+        
         this.descripcion = "Varita, que al igual que ella, es muy tierna, pero tiene más poder de lo que parece.";
     }
 
