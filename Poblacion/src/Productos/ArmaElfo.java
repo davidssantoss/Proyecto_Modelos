@@ -35,7 +35,7 @@ public class ArmaElfo implements Arma{
     
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 0, 0, null);
+        g.drawImage(imagen, 400, 0, null);
     }
      
 }

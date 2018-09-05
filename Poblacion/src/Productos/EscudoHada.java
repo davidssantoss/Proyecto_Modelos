@@ -29,7 +29,7 @@ public class EscudoHada implements Escudo{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 0, 0, null);
+        g.drawImage(imagen, 800, 0, null);
     }
      
 }

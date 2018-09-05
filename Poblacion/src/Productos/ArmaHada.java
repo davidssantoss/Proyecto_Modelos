@@ -16,7 +16,7 @@ import javax.swing.ImageIcon;
 public class ArmaHada implements Arma{
     String descripcion;
     Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/ArmaHada.jpg")).getImage();
+                "/Imagenes/ArmaHada.png")).getImage();
 
     public ArmaHada() {
         
@@ -27,7 +27,7 @@ public class ArmaHada implements Arma{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 0, 0, null);
+        g.drawImage(imagen, 300, 0, null);
     }
      
     public String getDescripcion() {

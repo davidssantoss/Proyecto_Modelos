@@ -5,6 +5,7 @@
  */
 package poblacion;
 import Vista.Interfaz;
+import Vista.Menu;
 import Vista.canvas;
 /**
  *
@@ -16,7 +17,9 @@ public class Poblacion {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       Interfaz interfaz = new Interfaz();
+        Menu menu = new Menu();
+        menu.mostrar();
+       //Interfaz interfaz = new Interfaz();
     }
     
 }

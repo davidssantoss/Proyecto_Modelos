@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
  */
 public class CuerpoHada implements Cuerpo{
     Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Hada.jpg")).getImage();
+                "/Imagenes/Hadapeq.png")).getImage();
      String descripcion;
 
     public CuerpoHada() {

@@ -16,11 +16,7 @@ import javax.swing.plaf.basic.BasicArrowButton;
  * @author Estudiantes
  */
 public class Interfaz extends JFrame {
-    public  JButton btnHumano = new JButton("Humano");
-    public  JButton btnOgro = new JButton("Ogro");
-    public  JButton btnHada = new JButton("Hada");
-    public  JButton btnMago = new JButton("Mago");
-    public  JButton btnElfo = new JButton("Elfo");
+    
     MiCanvas canvas;
 
     public Interfaz(){
@@ -28,7 +24,7 @@ public class Interfaz extends JFrame {
         
         setLayout(null);
         getContentPane().add(canvas);
-        //setBackground(Color.BLACK);
+        setBackground(Color.BLACK);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         pack();
         

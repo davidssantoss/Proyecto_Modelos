@@ -30,7 +30,7 @@ public class EscudoHumano implements Escudo{
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 0, 0, null);
+        g.drawImage(imagen, 900, 0, null);
     }
      
 }

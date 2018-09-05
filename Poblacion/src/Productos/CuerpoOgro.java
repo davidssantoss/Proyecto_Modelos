@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
  */
 public class CuerpoOgro implements Cuerpo{
     Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Ogro.jpg")).getImage(); ;
+                "/Imagenes/Ogro.jpg")).getImage();
     String descripcion;
 
     public CuerpoOgro() {
