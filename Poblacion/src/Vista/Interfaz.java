@@ -19,8 +19,8 @@ public class Interfaz extends JFrame {
     
     MiCanvas canvas;
 
-    public Interfaz(){
-        canvas = new MiCanvas();
+    public Interfaz(int i){
+        canvas = new MiCanvas(i);
         
         setLayout(null);
         getContentPane().add(canvas);

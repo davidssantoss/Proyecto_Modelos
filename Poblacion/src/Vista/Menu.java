@@ -19,6 +19,7 @@ import javax.swing.JLabel;
  */
 public class Menu extends JFrame {
     Personaje personaje;
+    int per;
     public JButton btnHumano = new JButton("Humano");
     public JButton btnOgro = new JButton("Ogro");
     public JButton btnHada = new JButton("Hada");
@@ -79,30 +80,30 @@ public class Menu extends JFrame {
         setVisible(true);
     }
     public void btnElfoActionPerformed(java.awt.event.ActionEvent evt) { 
-        //personaje = new Elfo();
-        Interfaz interfaz = new Interfaz();
+        per = 1;
+        Interfaz interfaz = new Interfaz(per);
         
     }                                        
 
     public void btnHadaActionPerformed(java.awt.event.ActionEvent evt) {  
-        //personaje = new Hada();
-        Interfaz interfaz = new Interfaz();
+        per = 2;
+        Interfaz interfaz = new Interfaz(per);
         
     }                                        
 
     public void btnHumanoActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        //personaje = new Humano();
-        Interfaz interfaz = new Interfaz();
+        per = 3;
+        Interfaz interfaz = new Interfaz(per);
     } 
     
     public void btnMagoActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        //personaje = new Mago();
-        Interfaz interfaz = new Interfaz();        
+        per = 4;
+        Interfaz interfaz = new Interfaz(per);        
     }
     
     public void btnOgroActionPerformed(java.awt.event.ActionEvent evt) {                                         
-        //personaje = new Ogro();
-        Interfaz interfaz = new Interfaz();
+        per = 5;
+        Interfaz interfaz = new Interfaz(per);
         
     } 
     

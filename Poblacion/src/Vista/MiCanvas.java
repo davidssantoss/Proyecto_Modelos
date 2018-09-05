@@ -27,9 +27,27 @@ public class MiCanvas extends Canvas {
     
     
     
-    public MiCanvas() {
-        personaje = new Elfo();
-        
+    public MiCanvas(int i) {
+        switch(i){
+            case 1:  
+                personaje = new Elfo();
+                break;
+            case 2:
+                personaje = new Hada();
+                break;
+            case 3:
+                personaje = new Humano();
+                break;
+            case 4:
+                personaje = new Mago();
+                break;
+            case 5:
+                personaje = new Ogro();
+                break;
+            default: 
+                break;            
+        }
+               
         cuerpo = personaje.crearCuerpo();
         arma = personaje.crearArma();
         escudo = personaje.crearEscudo();
