@@ -14,22 +14,15 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class CuerpoHada implements Cuerpo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Hadapeq.png")).getImage();
-     String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/Hada.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesCuerpoHada.png")).getImage();
 
     public CuerpoHada() {
-        
-        this.descripcion = "Ser de paz, vive en las más hermosas praderas en medio del bosque, pero si se siente amenazada, puede sacar su lado más oscuro y terrible.";
-    }
-     
-    @Override
-     public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 0, 0, null);
+        g.drawImage(descripcion, 0, 800, null);
     }
 }

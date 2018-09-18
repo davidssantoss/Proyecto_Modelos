@@ -14,13 +14,10 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaHada implements Arma{
-    String descripcion;
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/ArmaHada.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesArmaHada.png")).getImage();
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/ArmaHada.png")).getImage();
 
-    public ArmaHada() {
-        
-        this.descripcion = "Varita, que al igual que ella, es muy tierna, pero tiene más poder de lo que parece.";
+    public ArmaHada() { 
     }
 
 
@@ -28,10 +25,7 @@ public class ArmaHada implements Arma{
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 300, 0, null);
-    }
-     
-    public String getDescripcion() {
-        return descripcion;
+        g.drawImage(descripcion, 400, 800, null);
     }
      
 }

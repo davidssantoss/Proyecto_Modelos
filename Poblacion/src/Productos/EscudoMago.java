@@ -14,23 +14,16 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class EscudoMago implements Escudo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/EscudoMago.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/EscudoMago.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesEscudoMago.jpg")).getImage();
 
     public EscudoMago() {
-        
-        this.descripcion = "El escudo más grande y pesado de todos, sin embargo, esto no le impide protegerse perfectamente.";
-    }
-    
-    @Override
-    public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 900, 0, null);
+        g.drawImage(descripcion, 900, 700, null);
     }
      
 }

@@ -14,24 +14,16 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class CuerpoMago implements Cuerpo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Mago.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/Mago.jpg")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesCuerpoMago.png")).getImage();
 
     public CuerpoMago() {
-        
-        this.descripcion = "De apariencia casi humana, aunque con muchas más ventajas, como los poderes con los cuales se pueden defender de cualquier ataque.";
-    }
-
-
-    @Override
-    public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 0, 0, null);
+        g.drawImage(descripcion, 0, 700, null);
     }
     
     

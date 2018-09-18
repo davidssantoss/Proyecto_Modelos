@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package poblacion;
-import Vista.Interfaz;
 import Vista.Menu;
-import Vista.canvas;
 /**
  *
  * @author Estudiantes
@@ -19,7 +17,7 @@ public class Poblacion {
     public static void main(String[] args) {
         Menu menu = new Menu();
         menu.mostrar();
-       //Interfaz interfaz = new Interfaz();
+       
     }
     
 }

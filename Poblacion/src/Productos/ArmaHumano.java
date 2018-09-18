@@ -14,25 +14,16 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaHumano implements Arma{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/ArmaHumano.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/ArmaHumano.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesArmaHumano.png")).getImage();
 
     public ArmaHumano() {
-        
-        this.descripcion = "Espada forjara por los mejores herreros, pasada de generación en generación; casi indestructible";
     }
-
-
-    @Override
-    public String getDescripcion() {
-        return descripcion;
-    }
-
+    
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 400, 0, null);
-        
+        g.drawImage(descripcion, 400, 700, null);
     }
     
     

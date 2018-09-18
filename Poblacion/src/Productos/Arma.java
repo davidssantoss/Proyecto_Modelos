@@ -12,9 +12,6 @@ import java.awt.Graphics;
  * @author Estudiantes
  */
 public interface Arma {
-    
-    public String getDescripcion();
-    
-   public void draw(Graphics g); 
+    public void draw(Graphics g); 
     
 }

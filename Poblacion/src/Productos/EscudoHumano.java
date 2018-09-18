@@ -14,23 +14,16 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class EscudoHumano implements Escudo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/EscudoHumano.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/EscudoHumano.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesEscudoHumano.jpg")).getImage();
 
     public EscudoHumano() {
-        
-        this.descripcion = "Escudo resistente y ligero, perfecto para una batalla cuerpo a cuerpo.";
-    }
-     
-    @Override
-    public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 900, 0, null);
+        g.drawImage(descripcion, 900, 700, null);
     }
      
 }

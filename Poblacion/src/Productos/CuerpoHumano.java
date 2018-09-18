@@ -14,23 +14,15 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class CuerpoHumano implements Cuerpo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Humano.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/Humano.jpg")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesCuerpoHumano.png")).getImage();
 
     public CuerpoHumano() {
-        
-        this.descripcion = "Guerrero humano, uno de los más fuertes del mundo. Fiero y dispuesto a dar su vida por los suyos.";
-    }
-     
-     
-    @Override
-     public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 0, 0, null);
+        g.drawImage(descripcion, 0, 700, null);
     }
 }

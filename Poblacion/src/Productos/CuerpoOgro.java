@@ -14,22 +14,15 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class CuerpoOgro implements Cuerpo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/Ogro.jpg")).getImage();
-    String descripcion;
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/Ogro.jpg")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesCuerpoOgro.png")).getImage();
 
     public CuerpoOgro() {
-        
-        this.descripcion = "Grande y muy fuerte, el más agresivo de todos, no teme exteriorizar toda su fuerza con quien se atreva a enfrentarse a él.";
-    }
-
-    @Override
-    public String getDescripcion() {
-        return descripcion;
     }
 
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 0, 0, null);
+        g.drawImage(descripcion, 0, 400, null);
     }
 }

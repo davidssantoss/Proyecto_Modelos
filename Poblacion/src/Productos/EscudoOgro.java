@@ -14,22 +14,16 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class EscudoOgro implements Escudo{
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/EscOGRO.png")).getImage();
-    String descripcion; 
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/EscudoOgro.png")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesEscudoOgro.jpg")).getImage(); 
 
-    public EscudoOgro() { 
-        this.descripcion = "El más sencillo de todos, sin embargo, a el ogro no le hace falta, con su fuerza le basta.";
-    }
-    
-    @Override
-    public String getDescripcion() {
-        return descripcion;
+    public EscudoOgro() {
     }
 
     @Override
     public void draw(Graphics g) {
-        g.drawImage(imagen, 500, 500, null);
+        g.drawImage(imagen, 500, 0, null);
+        g.drawImage(descripcion, 900, 400, null);
     }
     
 }

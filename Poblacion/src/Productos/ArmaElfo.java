@@ -16,26 +16,18 @@ import javax.swing.ImageIcon;
  * @author Estudiantes
  */
 public class ArmaElfo implements Arma{
-    String descripcion;
-    Image imagen = new ImageIcon(getClass().getResource(
-                "/Imagenes/ArmaElfo.jpg")).getImage();
+    Image descripcion = new ImageIcon(getClass().getResource("/Imagenes/DesArmaHada.png")).getImage();
+    Image imagen = new ImageIcon(getClass().getResource("/Imagenes/ArmaElfo.png")).getImage();
     
 
     public ArmaElfo() {
-        
-        this.descripcion = "Escudo y flecha, de apariencia sencilla, pero muy letal en manos de un elfo, especialistas en la misma.\n";
-    }
-
-     
-    @Override
-    public String getDescripcion() {
-        return descripcion;
     }
 
     
     @Override
     public void draw(Graphics g) {
         g.drawImage(imagen, 400, 0, null);
+        g.drawImage(descripcion, 400, 750, null);
     }
      
 }
